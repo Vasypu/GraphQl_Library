@@ -1,50 +1,50 @@
 First step before start application, create base and change url, password and username in application.properties on your own.
 Some queries and mutations:
-query {
-    getAllBooks {
-    id
-    title
-    author {
-      id
-      name
-    }
-  }
+query {<br/>
+    getAllBooks {<br/>
+    id<br/>
+    title<br/>
+    author {<br/>
+      id<br/>
+      name<br/>
+    }<br/>
+  }<br/>
 }
 
-mutation {
-  saveAuthor(name: "Andrew", book: "First AndrBook") {
-    id
-    name
-  }
+mutation {<br/>
+  saveAuthor(name: "Andrew", book: "First AndrBook") {<br/>
+    id<br/>
+    name<br/>
+  }<br/>
+}<br/>
+
+mutation {<br/>
+  saveBook(title: "First jump", authorName: "Jon Tridle") {<br/>
+    id<br/>
+    title<br/>
+  }<br/>
+}<br/>
+
+query {<br/>
+  getAuthor(name: "Jon") {<br/>
+    id<br/>
+    name<br/>
+    books {<br/>
+      id<br/>
+      title<br/>
+    }<br/>
+  }<br/>
 }
 
-mutation {
-  saveBook(title: "First jump", authorName: "Jon Tridle") {
-    id
-    title
-  }
-}
+query {<br/>
+  getBooksByAuthor(authorName: "Jon") {<br/>
+    title<br/>
+  }<br/>
+}<br/>
 
-query {
-  getAuthor(name: "Jon") {
-    id
-    name
-    books {
-      id
-      title
-    }
-  }
-}
-
-query {
-  getBooksByAuthor(authorName: "Jon") {
-    title
-  }
-}
-
-query {
-  getAuthor(name: "Jon") {
-    id,
-    name
+query {<br/>
+  getAuthor(name: "Jon") {<br/>
+    id<br/>
+    name<br/>
   }
 }
