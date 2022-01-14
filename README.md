@@ -1,5 +1,5 @@
-First step before start application, create base and change url, password and username in application.properties on your own.
-Some queries and mutations:
+First step before start application, create base and change url, password and username in application.properties on your own.{<br/>
+Some queries and mutations:{<br/>
 query {<br/>
     getAllBooks {<br/>
     id<br/>
